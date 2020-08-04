@@ -32,7 +32,7 @@ function round(player) {
 	} else if(player == "PAPER") {
     	if(cpu == "SCISSORS") {
             cpuScore++;
-            results.textContent = cpu + " cut " + player;
+            results.textContent = cpu + " cuts " + player;
     	} else {
         	playerScore++;
             results.textContent = player + " covers " + cpu;
@@ -43,7 +43,7 @@ function round(player) {
             results.textContent = cpu + " smashes " + player;
     	} else {
             playerScore++;
-            results.textContent = player + " cut " + cpu;
+            results.textContent = player + " cuts " + cpu;
     	}
 	}
     score.textContent = 'Player: ' + playerScore + " | " + 'CPU: ' + cpuScore;
